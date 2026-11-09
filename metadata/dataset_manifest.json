@@ -1,0 +1,62 @@
+{
+  "repository_name": "sperchios-weather-hydro-satellite-recon-data.uth",
+  "title": "Sperchios River Reconstruction Data",
+  "version": "2026-11-09",
+  "study_area": "Sperchios River basin, Greece",
+  "license": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "row_grain": "one row per tile and date or five-day bin end date",
+  "files": [
+    {
+      "file": "sperchios_daily_matern.csv.gz",
+      "frequency": "daily",
+      "method": "Mat\u00e9rn GP",
+      "rows": 121728,
+      "columns": 43,
+      "date_range": [
+        "2016-01-01",
+        "2026-05-31"
+      ],
+      "tiles": 32
+    },
+    {
+      "file": "sperchios_daily_hydro_weather.csv.gz",
+      "frequency": "daily",
+      "method": "weather-driven state-space",
+      "rows": 121728,
+      "columns": 91,
+      "date_range": [
+        "2016-01-01",
+        "2026-05-31"
+      ],
+      "tiles": 32
+    },
+    {
+      "file": "sperchios_5day_matern.csv.gz",
+      "frequency": "five-day",
+      "method": "Mat\u00e9rn GP",
+      "rows": 24320,
+      "columns": 130,
+      "date_range": [
+        "2016-01-05",
+        "2026-05-27"
+      ],
+      "tiles": 32
+    },
+    {
+      "file": "sperchios_5day_hydro_weather.csv.gz",
+      "frequency": "five-day",
+      "method": "daily weather-driven reconstruction aggregated to five-day bins",
+      "rows": 24320,
+      "columns": 94,
+      "date_range": [
+        "2016-01-05",
+        "2026-05-27"
+      ],
+      "tiles": 32
+    }
+  ],
+  "data_dictionary": "metadata/data_dictionary.csv"
+}

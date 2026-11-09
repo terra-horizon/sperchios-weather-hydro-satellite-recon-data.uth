@@ -1,0 +1,359 @@
+dataset,field,group,description,unit
+daily_matern,date,key,Observation date or anonymized tile identifier.,date / identifier
+daily_matern,tile_id,key,Observation date or anonymized tile identifier.,date / identifier
+daily_matern,CDOM,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+daily_matern,Chl_a,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+daily_matern,Color,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+daily_matern,Cya,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+daily_matern,DOC,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+daily_matern,Turb,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+daily_matern,WQI,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+daily_matern,source_scene_count,count metadata,"Count of source scenes, acquisitions, pixels, or network edges.",count
+daily_matern,valid_pixels,count metadata,"Count of source scenes, acquisitions, pixels, or network edges.",count
+daily_matern,bbox_min_lon,geometry,Tile bounding-box coordinate in WGS84 longitude/latitude (EPSG:4326).,degrees
+daily_matern,bbox_min_lat,geometry,Tile bounding-box coordinate in WGS84 longitude/latitude (EPSG:4326).,degrees
+daily_matern,bbox_max_lon,geometry,Tile bounding-box coordinate in WGS84 longitude/latitude (EPSG:4326).,degrees
+daily_matern,bbox_max_lat,geometry,Tile bounding-box coordinate in WGS84 longitude/latitude (EPSG:4326).,degrees
+daily_matern,collection_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+daily_matern,water_status,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+daily_matern,label_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_matern,nearest_observation_gap_days,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+daily_matern,label_interpolated,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_matern,label_available,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_matern,s3_s8_brightness_temperature_c,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+daily_matern,s3_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_matern,s3_interpolated,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_matern,s3_available,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_matern,s3_valid_sample_fraction,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+daily_matern,s3_quality_pass,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_matern,ecmwf_tp_mm_day,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+daily_matern,ecmwf_ro_mm_day,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+daily_matern,ecmwf_t2m_c_day,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+daily_matern,ecmwf_ssrd_mj_m2_day,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+daily_matern,ecmwf_swvl1_day,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+daily_matern,ecmwf_u10_mean_m_s,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+daily_matern,ecmwf_v10_mean_m_s,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+daily_matern,hydro_local_q_m3_s,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+daily_matern,hydro_upstream_q_m3_s,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+daily_matern,hydro_local_q_change_1d_m3_s,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+daily_matern,hydro_velocity_m_s,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+daily_matern,hydro_depth_m,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+daily_matern,hydro_edge_slope_mean_m_m,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+daily_matern,hydro_river_width_mean_m,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+daily_matern,hydro_local_edge_length_sum_m,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+daily_matern,hydro_upstream_edge_count,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+daily_hydro_weather,date,key,Observation date or anonymized tile identifier.,date / identifier
+daily_hydro_weather,tile_id,key,Observation date or anonymized tile identifier.,date / identifier
+daily_hydro_weather,CDOM,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+daily_hydro_weather,Chl_a,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+daily_hydro_weather,Color,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+daily_hydro_weather,Cya,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+daily_hydro_weather,DOC,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+daily_hydro_weather,Turb,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+daily_hydro_weather,WQI,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+daily_hydro_weather,source_scene_count,count metadata,"Count of source scenes, acquisitions, pixels, or network edges.",count
+daily_hydro_weather,valid_pixels,count metadata,"Count of source scenes, acquisitions, pixels, or network edges.",count
+daily_hydro_weather,bbox_min_lon,geometry,Tile bounding-box coordinate in WGS84 longitude/latitude (EPSG:4326).,degrees
+daily_hydro_weather,bbox_min_lat,geometry,Tile bounding-box coordinate in WGS84 longitude/latitude (EPSG:4326).,degrees
+daily_hydro_weather,bbox_max_lon,geometry,Tile bounding-box coordinate in WGS84 longitude/latitude (EPSG:4326).,degrees
+daily_hydro_weather,bbox_max_lat,geometry,Tile bounding-box coordinate in WGS84 longitude/latitude (EPSG:4326).,degrees
+daily_hydro_weather,collection_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+daily_hydro_weather,water_status,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+daily_hydro_weather,label_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,nearest_observation_gap_days,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+daily_hydro_weather,label_interpolated,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,label_available,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,s3_s8_brightness_temperature_c,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+daily_hydro_weather,s3_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,s3_interpolated,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,s3_available,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,s3_valid_sample_fraction,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+daily_hydro_weather,s3_quality_pass,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,ecmwf_tp_mm_day,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+daily_hydro_weather,ecmwf_ro_mm_day,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+daily_hydro_weather,ecmwf_t2m_c_day,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+daily_hydro_weather,ecmwf_ssrd_mj_m2_day,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+daily_hydro_weather,ecmwf_swvl1_day,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+daily_hydro_weather,ecmwf_u10_mean_m_s,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+daily_hydro_weather,ecmwf_v10_mean_m_s,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+daily_hydro_weather,hydro_local_q_m3_s,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+daily_hydro_weather,hydro_upstream_q_m3_s,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+daily_hydro_weather,hydro_local_q_change_1d_m3_s,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+daily_hydro_weather,hydro_velocity_m_s,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+daily_hydro_weather,hydro_depth_m,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+daily_hydro_weather,hydro_edge_slope_mean_m_m,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+daily_hydro_weather,hydro_river_width_mean_m,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+daily_hydro_weather,hydro_local_edge_length_sum_m,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+daily_hydro_weather,hydro_upstream_edge_count,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+daily_hydro_weather,CDOM_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,CDOM_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,CDOM_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+daily_hydro_weather,CDOM_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+daily_hydro_weather,CDOM_drivers_complete,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,CDOM_constraint_applied,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,Chl_a_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,Chl_a_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,Chl_a_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+daily_hydro_weather,Chl_a_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+daily_hydro_weather,Chl_a_drivers_complete,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,Chl_a_constraint_applied,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,Color_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,Color_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,Color_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+daily_hydro_weather,Color_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+daily_hydro_weather,Color_drivers_complete,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,Color_constraint_applied,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,Cya_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,Cya_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,Cya_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+daily_hydro_weather,Cya_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+daily_hydro_weather,Cya_drivers_complete,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,Cya_constraint_applied,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,DOC_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,DOC_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,DOC_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+daily_hydro_weather,DOC_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+daily_hydro_weather,DOC_drivers_complete,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,DOC_constraint_applied,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,Turb_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,Turb_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,Turb_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+daily_hydro_weather,Turb_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+daily_hydro_weather,Turb_drivers_complete,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,Turb_constraint_applied,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,WQI_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,WQI_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,WQI_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+daily_hydro_weather,WQI_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+daily_hydro_weather,WQI_drivers_complete,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,WQI_constraint_applied,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,s3_s8_brightness_temperature_c_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,s3_s8_brightness_temperature_c_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,s3_s8_brightness_temperature_c_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+daily_hydro_weather,s3_s8_brightness_temperature_c_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+daily_hydro_weather,s3_s8_brightness_temperature_c_drivers_complete,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+daily_hydro_weather,s3_s8_brightness_temperature_c_constraint_applied,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,date,key,Observation date or anonymized tile identifier.,date / identifier
+five_day_matern,tile_id,key,Observation date or anonymized tile identifier.,date / identifier
+five_day_matern,ecmwf_tp_mm_day,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_matern,ecmwf_tp_mm_day_missing,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_matern,ecmwf_ro_mm_day,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_matern,ecmwf_ro_mm_day_missing,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_matern,ecmwf_t2m_c_day,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_matern,ecmwf_t2m_c_day_missing,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_matern,ecmwf_ssrd_mj_m2_day,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_matern,ecmwf_ssrd_mj_m2_day_missing,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_matern,ecmwf_swvl1_day,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_matern,ecmwf_swvl1_day_missing,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_matern,ecmwf_u10_mean_m_s,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_matern,ecmwf_u10_mean_m_s_missing,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_matern,ecmwf_v10_mean_m_s,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_matern,ecmwf_v10_mean_m_s_missing,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_matern,hydro_local_q_m3_s,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_matern,hydro_local_q_m3_s_missing,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_matern,hydro_upstream_q_m3_s,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_matern,hydro_upstream_q_m3_s_missing,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_matern,hydro_local_q_change_1d_m3_s,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_matern,hydro_local_q_change_1d_m3_s_missing,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_matern,hydro_velocity_m_s,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_matern,hydro_velocity_m_s_missing,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_matern,hydro_depth_m,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_matern,hydro_depth_m_missing,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_matern,bbox_min_lon,geometry,Tile bounding-box coordinate in WGS84 longitude/latitude (EPSG:4326).,degrees
+five_day_matern,bbox_min_lat,geometry,Tile bounding-box coordinate in WGS84 longitude/latitude (EPSG:4326).,degrees
+five_day_matern,bbox_max_lon,geometry,Tile bounding-box coordinate in WGS84 longitude/latitude (EPSG:4326).,degrees
+five_day_matern,bbox_max_lat,geometry,Tile bounding-box coordinate in WGS84 longitude/latitude (EPSG:4326).,degrees
+five_day_matern,hydro_edge_slope_mean_m_m,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_matern,hydro_river_width_mean_m,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_matern,hydro_local_edge_length_sum_m,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_matern,hydro_upstream_edge_count,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_matern,CDOM,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+five_day_matern,CDOM_raw_value,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,CDOM_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,CDOM_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,CDOM_history_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,CDOM_iqr_flagged,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,CDOM_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_matern,CDOM_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_matern,CDOM_gpr_std,uncertainty metadata,Reconstruction uncertainty proxy; it is not established as a calibrated prediction interval.,same as target
+five_day_matern,CDOM_training_weight,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,CDOM_acquisition_count,count metadata,"Count of source scenes, acquisitions, pixels, or network edges.",count
+five_day_matern,CDOM_age_since_observation_days,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,Chl_a,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+five_day_matern,Chl_a_raw_value,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,Chl_a_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,Chl_a_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,Chl_a_history_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,Chl_a_iqr_flagged,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,Chl_a_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_matern,Chl_a_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_matern,Chl_a_gpr_std,uncertainty metadata,Reconstruction uncertainty proxy; it is not established as a calibrated prediction interval.,same as target
+five_day_matern,Chl_a_training_weight,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,Chl_a_acquisition_count,count metadata,"Count of source scenes, acquisitions, pixels, or network edges.",count
+five_day_matern,Chl_a_age_since_observation_days,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,Color,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+five_day_matern,Color_raw_value,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,Color_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,Color_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,Color_history_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,Color_iqr_flagged,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,Color_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_matern,Color_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_matern,Color_gpr_std,uncertainty metadata,Reconstruction uncertainty proxy; it is not established as a calibrated prediction interval.,same as target
+five_day_matern,Color_training_weight,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,Color_acquisition_count,count metadata,"Count of source scenes, acquisitions, pixels, or network edges.",count
+five_day_matern,Color_age_since_observation_days,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,Cya,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+five_day_matern,Cya_raw_value,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,Cya_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,Cya_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,Cya_history_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,Cya_iqr_flagged,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,Cya_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_matern,Cya_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_matern,Cya_gpr_std,uncertainty metadata,Reconstruction uncertainty proxy; it is not established as a calibrated prediction interval.,same as target
+five_day_matern,Cya_training_weight,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,Cya_acquisition_count,count metadata,"Count of source scenes, acquisitions, pixels, or network edges.",count
+five_day_matern,Cya_age_since_observation_days,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,DOC,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+five_day_matern,DOC_raw_value,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,DOC_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,DOC_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,DOC_history_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,DOC_iqr_flagged,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,DOC_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_matern,DOC_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_matern,DOC_gpr_std,uncertainty metadata,Reconstruction uncertainty proxy; it is not established as a calibrated prediction interval.,same as target
+five_day_matern,DOC_training_weight,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,DOC_acquisition_count,count metadata,"Count of source scenes, acquisitions, pixels, or network edges.",count
+five_day_matern,DOC_age_since_observation_days,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,Turb,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+five_day_matern,Turb_raw_value,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,Turb_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,Turb_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,Turb_history_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,Turb_iqr_flagged,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,Turb_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_matern,Turb_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_matern,Turb_gpr_std,uncertainty metadata,Reconstruction uncertainty proxy; it is not established as a calibrated prediction interval.,same as target
+five_day_matern,Turb_training_weight,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,Turb_acquisition_count,count metadata,"Count of source scenes, acquisitions, pixels, or network edges.",count
+five_day_matern,Turb_age_since_observation_days,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,WQI,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+five_day_matern,WQI_raw_value,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,WQI_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,WQI_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,WQI_history_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,WQI_iqr_flagged,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,WQI_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_matern,WQI_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_matern,WQI_gpr_std,uncertainty metadata,Reconstruction uncertainty proxy; it is not established as a calibrated prediction interval.,same as target
+five_day_matern,WQI_training_weight,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,WQI_acquisition_count,count metadata,"Count of source scenes, acquisitions, pixels, or network edges.",count
+five_day_matern,WQI_age_since_observation_days,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,s3_s8_brightness_temperature_c,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+five_day_matern,s3_s8_brightness_temperature_c_raw_value,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,s3_s8_brightness_temperature_c_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,s3_s8_brightness_temperature_c_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,s3_s8_brightness_temperature_c_history_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_matern,s3_s8_brightness_temperature_c_iqr_flagged,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,s3_s8_brightness_temperature_c_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_matern,s3_s8_brightness_temperature_c_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_matern,s3_s8_brightness_temperature_c_gpr_std,uncertainty metadata,Reconstruction uncertainty proxy; it is not established as a calibrated prediction interval.,same as target
+five_day_matern,s3_s8_brightness_temperature_c_training_weight,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_matern,s3_s8_brightness_temperature_c_acquisition_count,count metadata,"Count of source scenes, acquisitions, pixels, or network edges.",count
+five_day_matern,s3_s8_brightness_temperature_c_age_since_observation_days,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_hydro_weather,date,key,Observation date or anonymized tile identifier.,date / identifier
+five_day_hydro_weather,tile_id,key,Observation date or anonymized tile identifier.,date / identifier
+five_day_hydro_weather,five_day_bin_start,aggregation,Five-day bin boundary or number of source daily rows in the bin.,date / days
+five_day_hydro_weather,five_day_bin_end,aggregation,Five-day bin boundary or number of source daily rows in the bin.,date / days
+five_day_hydro_weather,days_in_bin,aggregation,Five-day bin boundary or number of source daily rows in the bin.,date / days
+five_day_hydro_weather,CDOM,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+five_day_hydro_weather,Chl_a,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+five_day_hydro_weather,Color,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+five_day_hydro_weather,Cya,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+five_day_hydro_weather,DOC,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+five_day_hydro_weather,Turb,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+five_day_hydro_weather,WQI,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+five_day_hydro_weather,source_scene_count,count metadata,"Count of source scenes, acquisitions, pixels, or network edges.",count
+five_day_hydro_weather,valid_pixels,count metadata,"Count of source scenes, acquisitions, pixels, or network edges.",count
+five_day_hydro_weather,bbox_min_lon,geometry,Tile bounding-box coordinate in WGS84 longitude/latitude (EPSG:4326).,degrees
+five_day_hydro_weather,bbox_min_lat,geometry,Tile bounding-box coordinate in WGS84 longitude/latitude (EPSG:4326).,degrees
+five_day_hydro_weather,bbox_max_lon,geometry,Tile bounding-box coordinate in WGS84 longitude/latitude (EPSG:4326).,degrees
+five_day_hydro_weather,bbox_max_lat,geometry,Tile bounding-box coordinate in WGS84 longitude/latitude (EPSG:4326).,degrees
+five_day_hydro_weather,collection_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_hydro_weather,water_status,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_hydro_weather,label_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,nearest_observation_gap_days,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_hydro_weather,label_interpolated,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,label_available,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,s3_s8_brightness_temperature_c,satellite target,"Satellite-derived water-quality target; s3_s8_brightness_temperature_c is Sentinel-3 SLSTR S8 brightness temperature, not validated river temperature. WQI is project-specific.",see paper/source contract
+five_day_hydro_weather,s3_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,s3_interpolated,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,s3_available,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,s3_valid_sample_fraction,metadata,Source or preprocessing metadata; consult the method-specific contract.,see source contract
+five_day_hydro_weather,s3_quality_pass,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,ecmwf_tp_mm_day,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_hydro_weather,ecmwf_ro_mm_day,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_hydro_weather,ecmwf_t2m_c_day,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_hydro_weather,ecmwf_ssrd_mj_m2_day,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_hydro_weather,ecmwf_swvl1_day,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_hydro_weather,ecmwf_u10_mean_m_s,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_hydro_weather,ecmwf_v10_mean_m_s,weather,ECMWF-derived weather or land-surface driver; five-day values are sums for precipitation/runoff/radiation and means otherwise.,see column suffix/source contract
+five_day_hydro_weather,hydro_local_q_m3_s,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_hydro_weather,hydro_upstream_q_m3_s,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_hydro_weather,hydro_local_q_change_1d_m3_s,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_hydro_weather,hydro_velocity_m_s,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_hydro_weather,hydro_depth_m,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_hydro_weather,hydro_edge_slope_mean_m_m,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_hydro_weather,hydro_river_width_mean_m,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_hydro_weather,hydro_local_edge_length_sum_m,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_hydro_weather,hydro_upstream_edge_count,hydrology,Hydraulic or static river-network variable; dynamic five-day values are means unless documented as flux totals.,see column suffix/source contract
+five_day_hydro_weather,CDOM_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,CDOM_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,CDOM_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_hydro_weather,CDOM_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_hydro_weather,CDOM_drivers_complete,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,CDOM_constraint_applied,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,Chl_a_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,Chl_a_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,Chl_a_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_hydro_weather,Chl_a_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_hydro_weather,Chl_a_drivers_complete,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,Chl_a_constraint_applied,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,Color_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,Color_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,Color_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_hydro_weather,Color_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_hydro_weather,Color_drivers_complete,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,Color_constraint_applied,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,Cya_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,Cya_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,Cya_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_hydro_weather,Cya_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_hydro_weather,Cya_drivers_complete,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,Cya_constraint_applied,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,DOC_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,DOC_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,DOC_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_hydro_weather,DOC_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_hydro_weather,DOC_drivers_complete,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,DOC_constraint_applied,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,Turb_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,Turb_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,Turb_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_hydro_weather,Turb_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_hydro_weather,Turb_drivers_complete,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,Turb_constraint_applied,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,WQI_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,WQI_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,WQI_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_hydro_weather,WQI_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_hydro_weather,WQI_drivers_complete,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,WQI_constraint_applied,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,s3_s8_brightness_temperature_c_raw_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,s3_s8_brightness_temperature_c_observed,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,s3_s8_brightness_temperature_c_quality_flag,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_hydro_weather,s3_s8_brightness_temperature_c_fill_method,provenance category,"Categorical source, fill, or quality status; categories differ across preprocessing pipelines.",category
+five_day_hydro_weather,s3_s8_brightness_temperature_c_drivers_complete,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
+five_day_hydro_weather,s3_s8_brightness_temperature_c_constraint_applied,provenance flag,"Indicator describing observation availability, reconstruction, quality, or constraint status; exact semantics depend on method and cadence.",0/1 or fraction
