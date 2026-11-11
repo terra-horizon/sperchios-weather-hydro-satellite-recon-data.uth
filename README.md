@@ -1,4 +1,4 @@
-# Sperchios River Reconstruction Data
+# Sperchios River Satellite Water-Quality Reconstructions with Weather and Hydrology
 
 Four time-series datasets for 32 river tiles in the Sperchios River basin, Greece. They bring together satellite-derived water-quality indicators, ECMWF weather data, and hydraulic or river-network variables at daily and five-day frequencies.
 
