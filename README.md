@@ -1,17 +1,25 @@
 # Sperchios River Reconstruction Data
 
-Four daily and five-day datasets for the Sperchios River basin in Greece. Each file combines satellite-derived water-quality indicators with weather and river-context variables for 32 tiles.
+Four time-series datasets for 32 river tiles in the Sperchios River basin, Greece. They bring together satellite-derived water-quality indicators, ECMWF weather data, and hydraulic or river-network variables at daily and five-day frequencies.
 
 ## Files
 
-| File | Frequency | Rows | What it contains |
-|---|---|---:|---|
-| `data/sperchios_daily_matern.csv.gz` | Daily | 121,728 | Daily satellite targets with Matérn GP reconstruction. |
-| `data/sperchios_daily_hydro_weather.csv.gz` | Daily | 121,728 | Daily satellite targets with weather-driven state-space reconstruction and river/hydraulic fields. |
-| `data/sperchios_5day_matern.csv.gz` | Five-day | 24,320 | Five-day Matérn reconstruction dataset. |
-| `data/sperchios_5day_hydro_weather.csv.gz` | Five-day | 24,320 | Five-day summary derived from the daily weather-driven dataset. |
+| File | Frequency | Reconstruction | Data included |
+|---|---|---|---|
+| `data/sperchios_daily_matern.csv.gz` | Daily | Matérn Gaussian process | Sentinel-2-derived water-quality indicators and Sentinel-3 S8 brightness temperature, with ECMWF weather and river/hydraulic variables. |
+| `data/sperchios_daily_hydro_weather.csv.gz` | Daily | Weather-driven state-space model | The same satellite-derived targets, reconstructed using weather inputs; includes ECMWF weather and river/hydraulic variables. Hydraulic variables are present as covariates, but do not drive this reconstruction. |
+| `data/sperchios_5day_matern.csv.gz` | Five-day | Matérn Gaussian process | Five-day satellite-target panel with weather and hydraulic variables, prepared with fold-specific reconstruction for model training. |
+| `data/sperchios_5day_hydro_weather.csv.gz` | Five-day | Aggregated daily state-space panel | Satellite-derived targets, ECMWF weather, and river/hydraulic variables aggregated from the daily weather-driven dataset. No separate five-day reconstruction is fitted. |
 
 Daily data cover 2016-01-01 through 2026-05-31. Five-day data cover 2016-01-05 through 2026-05-27. The five-day files group non-overlapping five-day periods and use the final day as the row date.
+
+## Data included
+
+- **Satellite:** Sentinel-2-derived indicators for CDOM, chlorophyll-a (`Chl_a`), color, cyanobacteria (`Cya`), dissolved organic carbon (`DOC`), turbidity (`Turb`), and the project-specific water-quality index (`WQI`). Sentinel-3 SLSTR S8 brightness temperature is also included. These are derived time-series values, not raw satellite images.
+- **Weather:** ECMWF ERA5-Land variables, including precipitation, runoff, air temperature, solar radiation, soil moisture, and wind.
+- **Hydrology and river context:** hydraulic and river-network variables such as discharge, flow change, velocity, depth, channel geometry, and network context.
+
+The dataset files share these broad data sources, but their reconstruction and preprocessing differ. The `hydro_weather` name indicates the combined weather and river variables in the panel; in the daily state-space file, only weather variables drive label reconstruction.
 
 ## Reading the data
 
